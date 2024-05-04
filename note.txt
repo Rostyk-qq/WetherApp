@@ -1,0 +1,31 @@
+<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+fontAwesome для svg через синтаксис
+fa-solid fa-magnifying-glass - лупа
+
+crossorigin="anonymous" - означає шо ми звертаємося за
+даними анонім тому браузеру непотрібно питатися дозвола і права
+
+
+псевдо класс для input
+input::placeholder{
+
+}
+text-transform: capitalize; - стиль camel
+
+для рендерингу погоди
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}
+    &units=metric&appid=${apiKey}`)
+apiKey === '3f5e3f55d17d2e3caac4e4efb766c6f4'
+
+скидує непотрібні параметри для html
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    outline: none;
+    box-sizing: border-box;
+    border: 0;
+}
+тобто якшо в батьківському блоці є height яка в майбутньому буде змінюватися
+то для дочірнього нам потрібно використати max-content; він скаже шо початковий це максимальний для дочірнього
+
